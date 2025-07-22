@@ -5,7 +5,8 @@
   "description": "A readme generator node.js application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js -t",
+    "run": "node index.js"
   },
   "author": "Kieran `zekkxx` Anthony",
   "license": "MIT",

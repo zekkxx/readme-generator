@@ -2,7 +2,7 @@ import fs from'fs';
 import generateMarkdown from './utils/markdownGenerator.js';
 import prompt from './utils/promptInterpreter.js';
 
-import questions from './questions.json' assert { type: 'json'};
+import questions from './utils/questions.json' assert { type: 'json'};
 
 const writeToFile = (data) => {
     // console.log(process.cwd()); //__dirname
@@ -23,4 +23,20 @@ const init = async () => {
     }
 }
 
-init();
+const test = async () => {
+    try {
+        const rmData = await prompt(questions);
+        const rmMarkdown = generateMarkdown(rmData);
+        console.log(rmMarkdown);
+    } catch (err) {
+        console.error(err);
+    }
+}
+
+if (process.argv[2] && process.argv[2] === "-t") {
+    test();
+} else if (process.argv[2]) {
+    console.error("Unrecognized modifier applied. Did you mean -t?");
+} else {
+    init();
+}

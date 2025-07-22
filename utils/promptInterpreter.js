@@ -19,7 +19,6 @@ const prompt = async (questions) => {
         answersArr.push([questions[i].name, answer]);
     }
     let answers = Object.fromEntries(answersArr);
-    console.log(answers);
     return answers;
 }
 
