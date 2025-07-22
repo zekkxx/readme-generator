@@ -2,6 +2,8 @@ import fs from'fs';
 import generateMarkdown from './utils/markdownGenerator.js';
 import prompt from './utils/promptInterpreter.js';
 
+import questions from './questions.json' assert { type: 'json'};
+
 const writeToFile = (data) => {
     // console.log(process.cwd()); //__dirname
     const myDir = process.cwd(); //__dirname
@@ -13,7 +15,7 @@ const writeToFile = (data) => {
 
 const init = async () => {
     try {
-        const rmData = await prompt();
+        const rmData = await prompt(questions);
         writeToFile(rmData);
         console.log("Read Me has been Generated");
     } catch (err) {

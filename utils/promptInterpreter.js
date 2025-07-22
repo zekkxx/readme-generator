@@ -1,5 +1,4 @@
 import { checkbox, confirm, editor, expand, input, number, password, rawlist, search, select } from '@inquirer/prompts';
-import questions from './questions.json' assert { type: 'json'};
 
 const checkForChoices = (question) => {
     if (!question.choices) {
@@ -8,7 +7,7 @@ const checkForChoices = (question) => {
     }
 }
 
-const prompt = async () => {
+const prompt = async (questions) => {
     const uniqQuestionNames = [... new Set(questions.map((question) => question.name))]
     if (uniqQuestionNames.length !== questions.length) {
         throw new Error("Questions has duplicate Question Names");
