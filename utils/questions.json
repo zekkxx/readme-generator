@@ -1,0 +1,58 @@
+[
+    {
+        "type": "input",
+        "message": "What is the title of your project?",
+        "name": "title",
+        "required": true
+    },
+    {
+        "type": "input",
+        "message": "Describe your project:",
+        "name": "description"
+    },
+    {
+        "type": "input",
+        "message": "How would someone install your project?",
+        "name": "installation"
+    },
+    {
+        "type": "input",
+        "message": "How would someone test your project?",
+        "name": "testing"
+    },
+    {
+        "type": "input",
+        "message": "How does someone use your project?",
+        "name": "usage"
+    },
+    {
+        "type": "input",
+        "message": "contributing",
+        "name": "contributing"
+    },
+    {
+        "type": "input",
+        "message": "technologies",
+        "name": "technologies"
+    },
+    {
+        "type": "rawlist",
+        "message": "What license is your project using?",
+        "name": "license",
+        "choices": [
+            "GNU GPL 3.0",
+            "MIT",
+            "Unliscense",
+            "None",
+            "Test 1",
+            "Test 2",
+            "Test 3",
+            "Test 4"
+        ]
+    },
+    {
+        "type": "input",
+        "message": "contact",
+        "name": "contact"
+    }
+]
