@@ -1,5 +1,5 @@
 {
-  "name": "readme-generator",
+  "name": "readme-gen",
   "version": "1.0.0",
   "type":"module",
   "description": "A readme generator node.js application",
