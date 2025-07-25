@@ -19,28 +19,28 @@ const generateMarkdown = (data) => {
   const includeTOC = contact || contributing || description || features || installation || license || roadmap || technologies || testing || title || usage;
   if (includeTOC){
     tocMarkdown += "## Table of Contents\n";
-    installation ? tocMarkdown += "* [Installation](#installation)\n" : null;
-    testing ? tocMarkdown += "* [Testing](#testing)\n" : null;
-    usage ? tocMarkdown += "* [Usage](#usage)\n" : null;
-    features ? tocMarkdown += "* [Features](#features)\n" : null;
-    technologies ? tocMarkdown += "* [Technologies](#technologies)\n" : null;
-    license ? tocMarkdown += "* [License](#license)\n" : null;
-    roadmap ? tocMarkdown += "* [Roadmap](#roadmap)\n" : null;
-    contributing ? tocMarkdown += "* [Contributing](#contributing)\n" : null;
-    contact ? tocMarkdown += "* [Contact](#contact)\n" : null;
+    installation ? tocMarkdown += "* [Installation](#installation)\n" : "";
+    testing ? tocMarkdown += "* [Testing](#testing)\n" : "";
+    usage ? tocMarkdown += "* [Usage](#usage)\n" : "";
+    features ? tocMarkdown += "* [Features](#features)\n" : "";
+    technologies ? tocMarkdown += "* [Technologies](#technologies)\n" : "";
+    license ? tocMarkdown += "* [License](#license)\n" : "";
+    roadmap ? tocMarkdown += "* [Roadmap](#roadmap)\n" : "";
+    contributing ? tocMarkdown += "* [Contributing](#contributing)\n" : "";
+    contact ? tocMarkdown += "* [Contact](#contact)\n" : "";
     tocMarkdown += "\n";
   }
 
   let sectionMarkdown = "";
-  sectionMarkdown += installation ? `## Installation\n${installation}\n\n\n\n`: null;
-  sectionMarkdown += testing ? `## Testing\n${testing}\n\n`: null;
-  sectionMarkdown += usage ? `## Usage\n${usage}\n\n`: null;
-  sectionMarkdown += features ? `## Features\n${features}\n\n`: null;
-  sectionMarkdown += technologies ? `## Technologies\n${technologies}\n\n`: null;
-  sectionMarkdown += license ? `## License\n${license}\n\n`: null;
-  sectionMarkdown += roadmap ? `## Roadmap\n${roadmap}\n\n`: null;
-  sectionMarkdown += contributing ? `## Contributing\n${contributing}\n\n`: null;
-  sectionMarkdown += contact ? `## Contact\n${contact}\n\n`: null;
+  sectionMarkdown += installation ? `## Installation\n${installation}\n\n`: "";
+  sectionMarkdown += testing ? `## Testing\n${testing}\n\n`: "";
+  sectionMarkdown += usage ? `## Usage\n${usage}\n\n`: "";
+  sectionMarkdown += features ? `## Features\n${features}\n\n`: "";
+  sectionMarkdown += technologies ? `## Technologies\n${technologies}\n\n`: "";
+  sectionMarkdown += license ? `## License\n${license}\n\n`: "";
+  sectionMarkdown += roadmap ? `## Roadmap\n${roadmap}\n\n`: "";
+  sectionMarkdown += contributing ? `## Contributing\n${contributing}\n\n`: "";
+  sectionMarkdown += contact ? `## Contact\n${contact}\n\n`: "";
   
   const fullMarkdown = titleMarkdown + tocMarkdown + sectionMarkdown;
   return fullMarkdown;
