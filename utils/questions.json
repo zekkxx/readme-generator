@@ -12,7 +12,7 @@
     },
     {
         "type": "input",
-        "message": "How would someone install your project?",
+        "message": "How would someone install your project? (Not for development)",
         "name": "installation"
     },
     {
@@ -27,12 +27,17 @@
     },
     {
         "type": "input",
-        "message": "contributing",
+        "message": "What are some key features of your project?",
+        "name": "features"
+    },
+    {
+        "type": "input",
+        "message": "Who are some primary contributors to this project?",
         "name": "contributing"
     },
     {
         "type": "input",
-        "message": "technologies",
+        "message": "What technologies are you making use of? [Node Packages, IDEs, etc]",
         "name": "technologies"
     },
     {
@@ -40,19 +45,24 @@
         "message": "What license is your project using?",
         "name": "license",
         "choices": [
-            "GNU GPL 3.0",
-            "MIT",
-            "Unliscense",
-            "None",
-            "Test 1",
-            "Test 2",
-            "Test 3",
-            "Test 4"
+            {"name": "GNU GPL 3.0", "value": "GNU GPL 3.0"},
+            {"name": "MIT", "value": "MIT"},
+            {"name": "Unliscense", "value": "Unliscense"},
+            {"name": "None", "value": null},
+            {"name": "Test 1", "value": "Test 1"},
+            {"name": "Test 2", "value": "Test 2"},
+            {"name": "Test 3", "value": "Test 3"},
+            {"name": "Test 4", "value": "Test 4"}
         ]
     },
     {
         "type": "input",
-        "message": "contact",
+        "message": "What roadmap are you following for your project?",
+        "name": "roadmap"
+    },
+    {
+        "type": "input",
+        "message": "How can you be contacted about this project?",
         "name": "contact"
     }
 ]

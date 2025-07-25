@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node index.js -t",
-    "run": "node index.js"
+    "start": "node index.js"
   },
   "author": "Kieran `zekkxx` Anthony",
   "license": "MIT",
